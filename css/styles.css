@@ -235,6 +235,7 @@ figure {
 .gap-image {
   display: flex;
   gap: 30px;
+  align-items: flex-start;
 }
 h1 {
   width: 696px;
@@ -307,10 +308,11 @@ nav {
 .border-client:hover,
 .border-client:focus {
   --color5: #2196f3;
-  border: 1px solid #2196f3;
+  fill:var(--color5)
+   border: 1px solid #2196f3;
   /* nie dziala transition */
 
-  transition: var() 25s;
+  transition: all 2s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -388,10 +390,36 @@ footer .social-list-link {
   position: absolute;
   display: block;
   color: #ffffff;
+  font-style: 700px;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   background-image: linear-gradient(#2f303acc, #2f303acc);
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: 27px 90px;
+}
+.display-image {
+  display: block;
+}
+
+.link-active{
+position: relative;
+display: block;
+}
+
+.menu-style .link-active::after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(33, 150, 243, 1);
+  border: 1px solid rgba(33, 150, 243, 1);
+  border-radius: 2px;
+  
 }
