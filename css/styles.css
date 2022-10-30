@@ -308,8 +308,8 @@ nav {
 .border-client:hover,
 .border-client:focus {
   --color5: #2196f3;
-  fill:var(--color5)
-   border: 1px solid #2196f3;
+  fill: var(--color5);
+  border: 1px solid #2196f3;
   /* nie dziala transition */
 
   transition: all 2s;
@@ -405,9 +405,9 @@ footer .social-list-link {
   display: block;
 }
 
-.link-active{
-position: relative;
-display: block;
+.link-active {
+  position: relative;
+  display: block;
 }
 
 .menu-style .link-active::after {
@@ -421,7 +421,6 @@ display: block;
   background-color: rgba(33, 150, 243, 1);
   border: 1px solid rgba(33, 150, 243, 1);
   border-radius: 2px;
-  
 }
 .box {
   position: relative;
@@ -444,8 +443,28 @@ display: block;
 .overlay-text-style {
   display: flex;
   font-size: 18px;
-line-height: 1.5;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-padding: 49px 45px 49px 24px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 49px 45px 49px 24px;
 }
+.backdrop {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #ffffff;
+}
+/* .is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+} */
